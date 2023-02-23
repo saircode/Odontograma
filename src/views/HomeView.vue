@@ -14,48 +14,95 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">18</th>
-                  <th scope="col">17</th>
-                  <th scope="col">16</th>
-                  <th scope="col">15</th>
-                  <th scope="col">14</th>
-                  <th scope="col">13</th>
-                  <th scope="col">12</th>
-                  <th scope="col">11</th>
+                  <th scope="col" class="text-center">18</th>
+                  <th scope="col" class="text-center">17</th>
+                  <th scope="col" class="text-center">16</th>
+                  <th scope="col" class="text-center">15</th>
+                  <th scope="col" class="text-center">14</th>
+                  <th scope="col" class="text-center">13</th>
+                  <th scope="col" class="text-center">12</th>
+                  <th scope="col" class="text-center">11</th>
+
+                  <th scope="col" class="text-center"></th>
                   
-                  <th scope="col">21</th>
-                  <th scope="col">22</th>
-                  <th scope="col">23</th>
-                  <th scope="col">24</th>
-                  <th scope="col">25</th>
-                  <th scope="col">26</th>
-                  <th scope="col">27</th>
-                  <th scope="col">28</th>
+                  <th scope="col" class="text-center">21</th>
+                  <th scope="col" class="text-center">22</th>
+                  <th scope="col" class="text-center">23</th>
+                  <th scope="col" class="text-center">24</th>
+                  <th scope="col" class="text-center">25</th>
+                  <th scope="col" class="text-center">26</th>
+                  <th scope="col" class="text-center">27</th>
+                  <th scope="col" class="text-center">28</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><img src="@/assets/img/teeth/11-18/18/18.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/17/17.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/16/16.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/15/15.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/14/14.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/13/13.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/12/12.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="70" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/18/18.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/17/17.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/16/16.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/15/15.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/14/14.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/13/13.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/12/12.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/11/11.png" width="60" alt=""></td>
 
-                  <td><img src="@/assets/img/teeth/11-18/21/21.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/22/22.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/23/23.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/24/24.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/25/25.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/26/26.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/27/27.png" width="70" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/28/28.png" width="70" alt=""></td>
+                  <td class="text-center"></td>
 
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/21/21.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/22/22.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/23/23.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/24/24.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/25/25.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/26/26.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/27/27.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/28/28.png" width="60" alt=""></td>
                 </tr>
-                
+
+                <tr>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/18/18.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/17/17.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/16/16.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/15/15.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/14/14.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/13/13.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/12/12.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/11-18/11/11.png" width="60" alt=""></td>
+
+                  <td class="text-center"></td>
+
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/21/21.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/22/22.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/23/23.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/24/24.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/25/25.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/26/26.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/27/27.png" width="60" alt=""></td>
+                  <td class="text-center"><img src="@/assets/img/teeth/21-28/28/28.png" width="60" alt=""></td>
+                </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="col" class="text-center">48</th>
+                  <th scope="col" class="text-center">47</th>
+                  <th scope="col" class="text-center">46</th>
+                  <th scope="col" class="text-center">45</th>
+                  <th scope="col" class="text-center">44</th>
+                  <th scope="col" class="text-center">43</th>
+                  <th scope="col" class="text-center">42</th>
+                  <th scope="col" class="text-center">41</th>
+
+                  <th scope="col" class="text-center"></th>
+                  
+                  <th scope="col" class="text-center">31</th>
+                  <th scope="col" class="text-center">32</th>
+                  <th scope="col" class="text-center">33</th>
+                  <th scope="col" class="text-center">34</th>
+                  <th scope="col" class="text-center">35</th>
+                  <th scope="col" class="text-center">36</th>
+                  <th scope="col" class="text-center">37</th>
+                  <th scope="col" class="text-center">38</th>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
