@@ -35,22 +35,23 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
-                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="50" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/18/18.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/17/17.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/16/16.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/15/15.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/14/14.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/13/13.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/12/12.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/11/11.png" width="70" alt=""></td>
+
+                  <td><img src="@/assets/img/teeth/11-18/21/21.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/22/22.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/23/23.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/24/24.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/25/25.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/26/26.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/27/27.png" width="70" alt=""></td>
+                  <td><img src="@/assets/img/teeth/11-18/28/28.png" width="70" alt=""></td>
 
                 </tr>
                 
