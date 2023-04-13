@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="card mt-2">
@@ -88,7 +88,7 @@
           </div>
         </div>
 
-        <modal-options></modal-options>
+        <modal-options :teeth='teethSelected'  ref="modalOptions"/>
       </div>
     </div>
   </div>
@@ -105,56 +105,62 @@ export default{
     setup(){
       let teeth = ref([
         [
-          {id: 18 , img:'/assets/img/teeth/11-18/18/18.png'},
-          {id: 17 , img:'/assets/img/teeth/11-18/17/17.png'},
-          {id: 16 , img:'/assets/img/teeth/11-18/16/16.png'},
-          {id: 15 , img:'/assets/img/teeth/11-18/15/15.png'},
-          {id: 14 , img:'/assets/img/teeth/11-18/14/14.png'},
-          {id: 13 , img:'/assets/img/teeth/11-18/13/13.png'},
-          {id: 12 , img:'/assets/img/teeth/11-18/12/12.png'},
-          {id: 12 , img:'/assets/img/teeth/11-18/11/11.png'},
+          {id: 18 , img:'/assets/img/teeth/18/18.png'},
+          {id: 17 , img:'/assets/img/teeth/17/17.png'},
+          {id: 16 , img:'/assets/img/teeth/16/16.png'},
+          {id: 15 , img:'/assets/img/teeth/15/15.png'},
+          {id: 14 , img:'/assets/img/teeth/14/14.png'},
+          {id: 13 , img:'/assets/img/teeth/13/13.png'},
+          {id: 12 , img:'/assets/img/teeth/12/12.png'},
+          {id: 11 , img:'/assets/img/teeth/11/11.png'},
         ],
         [
-          {id: 21 , img:'/assets/img/teeth/21-28/21/21.png'},
-          {id: 22 , img:'/assets/img/teeth/21-28/22/22.png'},
-          {id: 23 , img:'/assets/img/teeth/21-28/23/23.png'},
-          {id: 24 , img:'/assets/img/teeth/21-28/24/24.png'},
-          {id: 25 , img:'/assets/img/teeth/21-28/25/25.png'},
-          {id: 26 , img:'/assets/img/teeth/21-28/26/26.png'},
-          {id: 27 , img:'/assets/img/teeth/21-28/27/27.png'},
-          {id: 28 , img:'/assets/img/teeth/21-28/28/28.png'},
+          {id: 21 , img:'/assets/img/teeth/21/21.png'},
+          {id: 22 , img:'/assets/img/teeth/22/22.png'},
+          {id: 23 , img:'/assets/img/teeth/23/23.png'},
+          {id: 24 , img:'/assets/img/teeth/24/24.png'},
+          {id: 25 , img:'/assets/img/teeth/25/25.png'},
+          {id: 26 , img:'/assets/img/teeth/26/26.png'},
+          {id: 27 , img:'/assets/img/teeth/27/27.png'},
+          {id: 28 , img:'/assets/img/teeth/28/28.png'},
         ],
         [
-          {id: 48 , img:'/assets/img/teeth/41-48/48/48.png'},
-          {id: 47 , img:'/assets/img/teeth/41-48/47/47.png'},
-          {id: 46 , img:'/assets/img/teeth/41-48/46/46.png'},
-          {id: 45 , img:'/assets/img/teeth/41-48/45/45.png'},
-          {id: 44 , img:'/assets/img/teeth/41-48/44/44.png'},
-          {id: 43 , img:'/assets/img/teeth/41-48/43/43.png'},
-          {id: 42 , img:'/assets/img/teeth/41-48/42/42.png'},
-          {id: 42 , img:'/assets/img/teeth/41-48/41/41.png'},
+          {id: 48 , img:'/assets/img/teeth/48/48.png'},
+          {id: 47 , img:'/assets/img/teeth/47/47.png'},
+          {id: 46 , img:'/assets/img/teeth/46/46.png'},
+          {id: 45 , img:'/assets/img/teeth/45/45.png'},
+          {id: 44 , img:'/assets/img/teeth/44/44.png'},
+          {id: 43 , img:'/assets/img/teeth/43/43.png'},
+          {id: 42 , img:'/assets/img/teeth/42/42.png'},
+          {id: 41 , img:'/assets/img/teeth/41/41.png'},
         ],
         [
-          {id: 31 , img:'/assets/img/teeth/31-38/31/31.png'},
-          {id: 32 , img:'/assets/img/teeth/31-38/32/32.png'},
-          {id: 33 , img:'/assets/img/teeth/31-38/33/33.png'},
-          {id: 34 , img:'/assets/img/teeth/31-38/34/34.png'},
-          {id: 35 , img:'/assets/img/teeth/31-38/35/35.png'},
-          {id: 36 , img:'/assets/img/teeth/31-38/36/36.png'},
-          {id: 37 , img:'/assets/img/teeth/31-38/37/37.png'},
-          {id: 38 , img:'/assets/img/teeth/31-38/38/38.png'},
+          {id: 31 , img:'/assets/img/teeth/31/31.png'},
+          {id: 32 , img:'/assets/img/teeth/32/32.png'},
+          {id: 33 , img:'/assets/img/teeth/33/33.png'},
+          {id: 34 , img:'/assets/img/teeth/34/34.png'},
+          {id: 35 , img:'/assets/img/teeth/35/35.png'},
+          {id: 36 , img:'/assets/img/teeth/36/36.png'},
+          {id: 37 , img:'/assets/img/teeth/37/37.png'},
+          {id: 38 , img:'/assets/img/teeth/38/38.png'},
         ],
         
       ]);
 
+      let modalOptions = ref(null);
+
       let teethSelected = ref([]);
 
+      const OpenModalOptions = (()=>{
+        modalOptions.value.openModal()
+      })
+
       watch(teethSelected , (currentValue, oldVAlue)=> {
-        alert()
+        OpenModalOptions()
       })
 
       return {
-        teeth,teethSelected
+        teeth,teethSelected,OpenModalOptions,modalOptions
       }
     }
   }
