@@ -33,26 +33,30 @@
               </thead>
               <tbody>
                 <tr>
-                  <td v-for="(item, key) in teeth[0]" :key="key" class="text-center" @click="teethSelected = item">
+                  <td v-for="(item, key) in teeth[0]" :key="key" class="text-center" style="cursor: pointer;" 
+                    @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
 
                   <td class="text-center"></td>
 
-                  <td v-for="(item, key) in teeth[1]" :key="key" class="text-center" @click="teethSelected = item">
+                  <td v-for="(item, key) in teeth[1]" :key="key" class="text-center" style="cursor: pointer;" 
+                    @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
                 
                 </tr>
 
                 <tr>
-                  <td v-for="(item, key) in teeth[2]" :key="key" class="text-center" @click="teethSelected = item">
+                  <td v-for="(item, key) in teeth[2]" :key="key" class="text-center" style="cursor: pointer;" 
+                    @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
 
                   <td class="text-center"></td>
 
-                  <td v-for="(item, key) in teeth[3]" :key="key" class="text-center" @click="teethSelected = item">
+                  <td v-for="(item, key) in teeth[3]" :key="key" class="text-center" style="cursor: pointer;" 
+                    @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
                 </tr>
@@ -83,15 +87,21 @@
             </table>
           </div>
         </div>
+
+        <modal-options></modal-options>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import ModalOptions from '../components/modalOptionsTeeth.vue';
 export default{
     name: 'OdontogramaHome',
+    components: {
+      ModalOptions
+    },
     setup(){
       let teeth = ref([
         [
@@ -138,6 +148,10 @@ export default{
       ]);
 
       let teethSelected = ref([]);
+
+      watch(teethSelected , (currentValue, oldVAlue)=> {
+        alert()
+      })
 
       return {
         teeth,teethSelected
