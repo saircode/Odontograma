@@ -33,26 +33,26 @@
               </thead>
               <tbody>
                 <tr>
-                  <td v-for="(item, key) in teeth[0]" :key="key" class="text-center">
+                  <td v-for="(item, key) in teeth[0]" :key="key" class="text-center" @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
 
                   <td class="text-center"></td>
 
-                  <td v-for="(item, key) in teeth[1]" :key="key" class="text-center">
+                  <td v-for="(item, key) in teeth[1]" :key="key" class="text-center" @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
                 
                 </tr>
 
                 <tr>
-                  <td v-for="(item, key) in teeth[2]" :key="key" class="text-center">
+                  <td v-for="(item, key) in teeth[2]" :key="key" class="text-center" @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
 
                   <td class="text-center"></td>
 
-                  <td v-for="(item, key) in teeth[3]" :key="key" class="text-center">
+                  <td v-for="(item, key) in teeth[3]" :key="key" class="text-center" @click="teethSelected = item">
                     <img :src="item.img" width="60" alt="">
                   </td>
                 </tr>
@@ -136,8 +136,11 @@ export default{
         ],
         
       ]);
+
+      let teethSelected = ref([]);
+
       return {
-        teeth
+        teeth,teethSelected
       }
     }
   }
