@@ -22,7 +22,11 @@
                 <div class="col-12 mb-2">
                     <p>Nuevo diagnostico:</p>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-2 text-center" v-for="(item, key) in diagnosesToChoose" :key="key">
+                <div class="col-md-3 col-sm-6 mb-2 text-center" 
+                    v-for="(item) in diagnosesToChoose" 
+                    :class="{'mouseoverSelecction':mouseoverSelecction===item.diagnosisKey}" 
+                    @mouseover="mouseoverSelecction = item.diagnosisKey" 
+                    :key="item.diagnosisKey">
                     <img :src="item.img" class="img-fluid img" alt="" width="68">
                     <label for="">{{ item.name  }}</label>
                 </div>
@@ -56,7 +60,8 @@ export default {
     },
     setup(props) {
         let modal = ref(null),
-            modalInstance = ref(null)
+            modalInstance = ref(null),
+            mouseoverSelecction = ref(null) // guarda el id del diagnosesToChoose cuando esta el cursor encima
         
         const diagnosesToChoose = computed(()=>{
             if(props.teeth){
@@ -85,8 +90,16 @@ export default {
         }
 
         return {
-            modal,modalInstance,openModal,closeModal,diagnosesToChoose
+            modal,modalInstance,openModal,closeModal,diagnosesToChoose,
+            mouseoverSelecction
         }
     },
 }
 </script>
+
+<style scoped>
+    .mouseoverSelecction{
+        background-color: rgba(58, 176, 236, 0.426);
+        cursor: pointer;
+    }
+</style>
