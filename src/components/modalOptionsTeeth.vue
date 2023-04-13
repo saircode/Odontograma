@@ -22,9 +22,10 @@
                 <div class="col-12 mb-2">
                     <p>Nuevo diagnostico:</p>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-2 text-center" 
-                    v-for="(item) in diagnosesToChoose" 
-                    :class="{'mouseoverSelecction':mouseoverSelecction===item.diagnosisKey}" 
+                <div v-for="(item) in diagnosesToChoose" @click="diagnosisSelected = item"
+                    :class="[{'mouseoverSelecction':mouseoverSelecction===item.diagnosisKey, 
+                        'divDiagnosisSelected':diagnosisSelected && diagnosisSelected.diagnosisKey === item.diagnosisKey}, 
+                        'col-md-3 col-sm-6 mb-2 text-center']" 
                     @mouseover="mouseoverSelecction = item.diagnosisKey" 
                     :key="item.diagnosisKey">
                     <img :src="item.img" class="img-fluid img" alt="" width="68">
@@ -61,8 +62,8 @@ export default {
     setup(props) {
         let modal = ref(null),
             modalInstance = ref(null),
-            mouseoverSelecction = ref(null) // guarda el id del diagnosesToChoose cuando esta el cursor encima
-        
+            mouseoverSelecction = ref(null), // guarda el id del diagnosesToChoose cuando esta el cursor encima
+            diagnosisSelected = ref(null)
         const diagnosesToChoose = computed(()=>{
             if(props.teeth){
                 return [
@@ -91,7 +92,7 @@ export default {
 
         return {
             modal,modalInstance,openModal,closeModal,diagnosesToChoose,
-            mouseoverSelecction
+            mouseoverSelecction,diagnosisSelected
         }
     },
 }
@@ -99,7 +100,11 @@ export default {
 
 <style scoped>
     .mouseoverSelecction{
-        background-color: rgba(58, 176, 236, 0.426);
+        border: 2px solid rgba(58, 177, 236, 0.679);
+        cursor: pointer;
+    }
+    .divDiagnosisSelected{
+        background-color:rgba(58, 177, 236, 0.679);
         cursor: pointer;
     }
 </style>
