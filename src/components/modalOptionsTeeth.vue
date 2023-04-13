@@ -13,7 +13,7 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-12 mb-2">
-                    <p>Diente actual:</p>
+                    <p>Diagnostico actual:</p>
                 </div>
                 <div class="col-12 mb-2">
                     <img :src="teeth.img" class="img-fluid img" width="80" alt="">
